@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Assignment";
+    //Layout = "~/Core MVC/Views/Shared/_Layout.cshtml";
+}
+@model List<Person>
+
+<div class="text-center">
+    <center>
+        @foreach (var item in Model)
+        {
+            <div>
+
+                @Html.DisplayFor(modelItem => item.FirstName)
+
+                @Html.DisplayFor(modelItem => item.LastName) ,
+
+                @((bool)item.Gender ? "Male" : "Female"),
+              
+                @Html.DisplayFor(modelItem => item.DateOfBirth) ,
+
+                @Html.DisplayFor(modelItem => item.Phone) ,
+
+                @Html.DisplayFor(modelItem => item.BirthPlace) ,
+
+                @Html.DisplayFor(modelItem => item.Age) ,
+
+                @((bool)item.Gender ? "Yes" : "No"),
+
+            </div>
+        }
+
+    </center>
+</div>

@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Assignment-3";
+    //Layout = "~/Core MVC/Views/Shared/_Layout.cshtml";
+}
+@model List<Person>
+
+<div class="text-center">
+    <center>
+        <h3>List contains Full Name only</h3>
+        <br/>
+        @foreach (var item in Model)
+        {
+            <div>
+
+                @Html.DisplayFor(modelItem => item.FirstName)
+
+                @Html.DisplayFor(modelItem => item.LastName)
+
+            </div>
+        }
+
+    </center>
+</div>

@@ -1,0 +1,50 @@
+@{
+    ViewData["Title"] = "Assignment-4";
+
+}
+@model List<Person>
+
+<div class="text-center">
+    <center>
+        <h3>List years 2000</h3>
+        <br/>
+        <div>
+
+            @using (Html.BeginForm("Task4", "Rookies", FormMethod.Get))
+            {
+
+                <button class="btn btn-primary" type="submit" value="1" name="smallTask"> Year equal 2000 </button>
+                <button class="btn btn-primary" type="submit" value="2" name="smallTask"> Year less 2000 </button>
+                <button class="btn btn-primary" type="submit" value="3" name="smallTask"> Year higher 2000 </button>
+
+            }
+        </div>
+
+        <br /> <br />
+
+        @foreach (var item in Model)
+        {
+
+            <div>
+
+                @Html.DisplayFor(modelItem => item.FirstName)
+
+                @Html.DisplayFor(modelItem => item.LastName) ,
+
+                @((bool)item.Gender ? "Male" : "Female"),
+
+                @Html.DisplayFor(modelItem => item.DateOfBirth) ,
+
+                @Html.DisplayFor(modelItem => item.Phone) ,
+
+                @Html.DisplayFor(modelItem => item.BirthPlace) ,
+
+                @Html.DisplayFor(modelItem => item.Age) ,
+
+                @((bool)item.Gender ? "Yes" : "No"),
+
+            </div>
+        }
+
+    </center>
+</div>
