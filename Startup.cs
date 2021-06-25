@@ -52,9 +52,6 @@ namespace Core_MVC
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-                endpoints.MapControllerRoute(
-               name: "nashtech",
-               pattern: "Nashtech/{controller=Home}/{action=Index}/{id?}");
             });
 
 
