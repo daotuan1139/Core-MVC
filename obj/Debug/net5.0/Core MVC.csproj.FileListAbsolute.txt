@@ -50,3 +50,4 @@ C:\Users\admin\Desktop\NashTech\Core MVC\obj\Debug\net5.0\Razor\Views\Rookies\Ta
 C:\Users\admin\Desktop\NashTech\Core MVC\obj\Debug\net5.0\Razor\Views\Rookies\Create.cshtml.g.cs
 C:\Users\admin\Desktop\NashTech\Core MVC\obj\Debug\net5.0\Razor\Views\Rookies\Delete.cshtml.g.cs
 C:\Users\admin\Desktop\NashTech\Core MVC\obj\Debug\net5.0\Razor\Views\Rookies\Edit.cshtml.g.cs
+C:\Users\admin\Desktop\NashTech\Core MVC\obj\Debug\net5.0\Razor\Views\Rookies\Detail.cshtml.g.cs

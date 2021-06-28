@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Core_MVC.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace Core_MVC.Controllers
 {
@@ -25,7 +26,10 @@ namespace Core_MVC.Controllers
 
         public IActionResult Privacy()
         {
-            return View();
+            CookieOptions options = new CookieOptions();
+            options.Expires = System.DateTimeOffset.Now.AddDays(5);
+            Response.Cookies.Append("Test","123", options);
+            return Content("Cookies");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

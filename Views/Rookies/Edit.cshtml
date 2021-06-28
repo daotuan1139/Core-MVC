@@ -7,7 +7,7 @@
 <h2>Edit</h2>
 <div>
     <center>
-        <form asp-action="Edit" asp-controller="Rookies" method="GET">
+        <form asp-action="Edit" asp-controller="Rookies" method="POST">
             <table>
                 <tr>
                     <td>First Name</td>
@@ -39,14 +39,14 @@
                 <tr>
                     <td>Phone</td>
                     <td>
-                        <input asp-for="Phone" type="number"  asp-value-for="Phone" />
+                        <input asp-for="Phone" type="number"  asp-value-for="Phone" ></label>
                         <span asp-validation-for="Phone"></span>
                     </td>
                 </tr>
                 <tr>
                     <td>BirthPlace</td>
                     <td>
-                        <input asp-for="BirthPlace" asp-value-for="BirthPlace"/>
+                        <input asp-for="BirthPlace" value="BirthPlace"></label>
                     </td>
                 </tr>
                 <tr>
@@ -72,7 +72,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>
-                        <button type="submit">Edit</button>
+                        <button type="submit">Delete</button>
                     </td>
                 </tr>
             </table>

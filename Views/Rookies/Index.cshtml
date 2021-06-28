@@ -69,10 +69,12 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.Email)</td>
                     <td>
-                        @* @Html.ActionLink("Sửa", "Edit", new { id=item.Email }) |
-                        @Html.ActionLink("Xóa", "Delete", new { id=item.Email }) *@
-                        <a asp-action="Edit" asp-route-id="@item.Email">Edit</a>
-                        <a asp-action="Delete" asp-route-id="@item.Email">Delete</a>
+                        @Html.ActionLink("Sửa", "Edit", new { email=item.Email }) |
+                        @Html.ActionLink("Detail", "Detail", new { email=item.Email }) |
+                        @* @Html.ActionLink("Xóa", "Delete", new { email=item.Email }) *@
+                        @* <a asp-action="Edit" asp-route-id="@item.Email">Edit</a>
+                        <a asp-action="Detail" asp-route-id="@item.Email">Detail</a>
+                        <a asp-action="Delete" asp-route-id="@item.Email">Delete</a> *@
                     </td>
                 </tr>
             }

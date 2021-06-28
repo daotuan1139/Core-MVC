@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XeULLqUnWBgkuaCtBaYgLRnB9lcaL2obeusNnGfYiPwWoymEoYcK/TooD0rsHeqrcxVrlXfFfIvMb2FtGRzz/A==",
+  "dgSpecHash": "8hR2yiTISjkVH72yMLa3x6LAH1FyI+zTnBvZu4CnhXCq1lK9TIINF1PEPKCH70QCUh/UN0H9iIbLD8TV/A+RMg==",
   "success": true,
   "projectFilePath": "C:\\Users\\admin\\Desktop\\NashTech\\Core MVC\\Core MVC.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
